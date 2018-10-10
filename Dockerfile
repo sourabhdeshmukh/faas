@@ -1,6 +1,6 @@
 FROM ubuntu:16.04
 Maintainer sourabh.deshmukh.988@gmail.com
-RUN sudo apt-get install curl -y
+RUN sudo apt-get install curl 
 RUN curl -fsSL https://get.docker.com | sh
 RUN sudo systemctl start docker && sudo systemctl enable docker
 RUN sudo groupadd docker && sudo usermod -aG docker dockeruser
